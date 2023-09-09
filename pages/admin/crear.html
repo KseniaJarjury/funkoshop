@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrearItem</title>
+</head>
+<body>
+    <h1>CREAR NUEVO ITEM</h1>
+        <form action="">
+            <label for="categoria">
+                Categoria: 
+            </label>
+            <select name="user_categoria" id="categoria">
+                <option value="">Seleccionar</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <label for="licencia">
+                Licencia: 
+            </label>
+            <select id="licencia" name="user_licencia">
+                <option value="">Seleccionar</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <label for="name_producto">
+                Nombre del Producto: 
+            </label>
+            <input 
+                id="name_producto"
+                name="user_producto"
+                type="text"
+                minlength="10"
+                maxlength="30"
+                placeholder="Kakashi Hatake Shippuden Saga"
+                required>
+            <textarea 
+                id="descrip_producto" 
+                name="user_descripcion"
+                minlength="30"
+                maxlength="3000"
+                placeholder="Descripcion del producto"
+                required>
+            </textarea>
+            <label for="sku">SKU: </label>
+            <input 
+                id="sku"
+                name="user_sku"
+                type="text"
+                minlength="10"
+                maxlength="30"
+                placeholder="SSK111AB001"
+                required>
+            <label for="precio">Precio: </label>
+            <input 
+                id="precio"
+                name="user_precio"
+                type="number"
+                placeholder="$0.000,00"
+                required>
+            <label for="stock">Stock: </label>
+            <input 
+                id="stock"
+                name="user_stock"
+                type="number"
+                placeholder="0"
+                required>
+            <label for="descuento">Descuento: </label>
+            <input 
+                id="descuento"
+                name="user_descuento"
+                type="number"
+                placeholder="0%"
+                required>
+            <label for="cuota">
+                Cuotas: 
+            </label>
+            <select name="user_cuota" id="cuota">
+                <option value="">3 Cuotas sin interes</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <label for="image">Imagenes: </label>
+            <input 
+                id="image"
+                name="user_image"
+                type="file"
+                placeholder=""
+                required>
+        </form>
+        <div>
+            <button type="button">Agregar Producto</button>
+            <button type="button">Limpiar</button>
+        </div>
+</body>
+</html>
